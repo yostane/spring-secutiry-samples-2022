@@ -1,13 +1,13 @@
-package com.example.simplesecone;
+package com.lecture.springsec;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SimpleSecOneApplication {
+public class SpringRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SimpleSecOneApplication.class, args);
+		SpringApplication.run(SpringRestApplication.class, args);
 	}
 
 }

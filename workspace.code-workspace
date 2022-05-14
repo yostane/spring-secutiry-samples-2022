@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "00-spring-api"
+		},
+		{
+			"path": "01-simple-sec-one"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}

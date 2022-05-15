@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8080
+###
+{{baseUrl}}/greeting
+### b64 de user:password -> dXNlcjpwYXNzd29yZA==
+{{baseUrl}}/protectedGreeting
+Authorization: Basic dXNlcjpwYXNzd29yZA==
+###
+# bcrypt mdp: $2a$10$lHamYXOcefYUwmPsMpyXBe5HKiXuxnt0rt38YJNpa9KGQA2kzTXBa
+{{baseUrl}}/protectedGreeting
+Authorization: Basic dXNlcjokMnkkMTAkRmJtdERnNUNVSHYzS3NPczZrVmRLZWRrci51N3RKTVl4SzVpQVNIdENDOWJLVmdLZUFJd0M=
+###
+POST {{baseUrl}}/logout
+

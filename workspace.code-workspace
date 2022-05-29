@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "01-simple-sec-one"
+		},
+		{
+			"path": "02-simple-sec-samples"
+		},
+		{
+			"path": "03-simple-sec-samples"
 		}
 	],
 	"settings": {

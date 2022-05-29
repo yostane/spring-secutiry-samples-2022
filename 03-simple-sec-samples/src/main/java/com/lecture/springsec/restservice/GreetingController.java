@@ -25,5 +25,4 @@ public class GreetingController {
     public Greeting protectedGreeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format("Protected " + template, name));
     }
-
 }

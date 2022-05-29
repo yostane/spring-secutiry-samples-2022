@@ -1,0 +1,6 @@
+@baseUrl = http://localhost:8080
+###
+{{baseUrl}}/greeting
+### b64 de user:password -> dXNlcjpwYXNzd29yZA==
+{{baseUrl}}/protectedGreeting
+Authorization: Basic dXNlcjpwYXNzd29yZA==

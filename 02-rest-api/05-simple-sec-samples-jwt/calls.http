@@ -3,7 +3,12 @@
 {{baseUrl}}/greeting
 ### b64 de user:password -> dXNlcjpwYXNzd29yZA==
 {{baseUrl}}/protectedGreeting
-Authorization: Basic dXNlcjpwYXNzd29yZA==
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjU0NTYzNTU4LCJpYXQiOjE2NTQ1NDU1NTh9.775WraO99KebMTNbI5W4cA7NbJDeitHnU-FokLIGh88DErgXY9eqRazFEYIYeDSYsHgv2otT0gds1hUvfpD7JA
 ###
-POST {{baseUrl}}/users/logout
-Authorization: Basic dXNlcjpwYXNzd29yZA==
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}

@@ -21,7 +21,8 @@
     <h1>List of greetings</h1>
     <ul>
         <li th:each="greeting:${greetings}">
-            <span th:text="${greeting.id}"></span> : <span th:text="${greeting.content}"></span>
+            <span th:text="${greeting.id}"></span> : <span th:text="${greeting.content}"></span> -
+            <a th:href="${greeting.content}">Cliquer ici</a>
         </li>
     </ul>
 

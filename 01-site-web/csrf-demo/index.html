@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSRF demo</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <form action="http://localhost:8080/greeting" method="post">
-        <p>Id: </p>
-        <input type="text" name="id" value="90">
-        <p>Content: </p>
-        <input type="text" name="content" value="oups">
-        <button type="submit">send</button>
+      <p>Id:</p>
+      <input hidden type="text" name="id" value="90" />
+      <p>Content:</p>
+      <input hidden type="text" name="content" value="oups" />
+      <button type="submit">send</button>
     </form>
-</body>
-
+  </body>
 </html>

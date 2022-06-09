@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:8080
+@token = 
+
+###
+{{baseUrl}}/greeting
+### b64 de user:password -> dXNlcjpwYXNzd29yZA==
+{{baseUrl}}/protectedGreeting
+Authorization: Bearer {{token}}
+###
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}
+###
+{{baseUrl}}/auth/principal
+Authorization: Bearer {{token}}
